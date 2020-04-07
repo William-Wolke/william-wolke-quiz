@@ -1,0 +1,115 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0%;
+    margin-bottom: 25px;
+}
+
+header{
+    background-color: #3c3c41;
+    font: 1em serif;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr repeat(4, 2fr);
+    grid-gap: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#svar-grid{
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-row-gap: 15px;
+    grid-template-rows: auto;
+}
+
+#question1,
+#question2,
+#question3,
+#question4 {
+    grid-column: 2/3;
+}
+
+#question1{
+    grid-row: 2/3;
+}
+
+#question2{
+    grid-row: 3/4;
+}
+
+#question3{
+    grid-row: 4/5;
+}
+
+#question4{
+    grid-row: 5/6;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    display: block;
+    border: solid;
+    padding: 1%;
+}
+
+input[type="radio"] + label:hover {
+    background:lightseagreen;
+}
+
+input[type="radio"]:checked + label {
+background:lightgreen;
+}
+
+input[type="radio"]:hover:checked + label {
+    background: lightblue;
+}
+
+#svar-knapp{
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#resultat{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: none;
+    border: 2px solid black;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #66666e;
+}
+
+button {
+    display: block;
+    border: 2px solid black;
+    padding: 1rem;
+    box-shadow: none;
+    font-size: 1em;
+    color: black;
+}
+
+button:hover {
+    background-color: lavenderblush;
+}
+  
+button:disabled {
+    background-color: dimgray;
+}
+  
+button:disabled:hover {
+    background-color: dimgray;
+}

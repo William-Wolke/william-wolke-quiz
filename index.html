@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="script/quiz.js"></script>
+    <title>Mitt quiz</title>
+</head>
+<body>
+    <header>
+        <h1>Vilken Schnitzel Är Du?</h1>
+    </header>
+
+    <section id="grid">
+        <div id="question1">
+            <h2>Vilken citrusfrukt passar bäst med schnitzel?</h2>
+            <div>
+                <input type="radio" name="q1" id="q1a" value="2">
+                <label for="q1a">Citron</label>
+            </div>
+            <div>
+                <input type="radio" name="q1" id="q1b" value="1">
+                <label for="q1b">Lime</label>
+            </div>
+            <div>
+                <input type="radio" name="q1" id="q1c" value="0">
+                <label for="q1c">Blodapelsin</label>
+            </div>
+        </div>
+        <div id="question2">
+            <h2>Vilken sås passar bäst med schnitzel?</h2>
+            <div>
+                <input type="radio" name="q2" id="q2a" value="0">
+                <label for="q2a">Ost och skinksås</label>
+            </div>
+            <div>
+                <input type="radio" name="q2" id="q2b" value="2">
+                <label for="q2b">Svampsås</label>
+            </div>
+            <div>
+                <input type="radio" name="q2" id="q2c" value="1">
+                <label for="q2c">Rödvinssås</label>
+            </div>
+        </div>
+        <div id="question3">
+            <h2>Vilket kött ska schnitzeln vara gjord av?</h2>
+            <div>
+                <input type="radio" name="q3" id="q3a" value="1">
+                <label for="q3a">Kalvkött</label>
+            </div>
+            <div>
+                <input type="radio" name="q3" id="q3b" value="0">
+                <label for="q3b">Köttfärs</label>
+            </div>
+            <div>
+                <input type="radio" name="q3" id="q3c" value="2">
+                <label for="q3c">Griskött</label>
+            </div>
+        </div>
+        <div id="question4">
+            <h2>Har du ätit tysk schnitzel?</h2>
+            <div>
+                <input type="radio" name="q4" id="q4a" value="0">
+                <label for="q4a">Räknas Ica basic schnitzel som tysk?</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" id="q4b" value="1">
+                <label for="q4b">Nej</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" id="q4c" value="2">
+                <label for="q4c">Ja</label>
+            </div>
+        </div>
+    </section>
+
+    <section id="svar-grid">
+        <div id="svar-knapp">
+            <button type="button" class="show-results">Se ditt resultat</button>
+        </div>
+        <div id="resultat">
+            <p id="svar"></p>
+        </div>
+    </section>
+</body>
+</html>
